@@ -1,9 +1,11 @@
 [
     {
+        "id": "1",
         "imageName": "LOTR",
         "title": "Lord of The Rings"
     },
     {
+        "id": "2",
         "imageName": "HarryPotter",
         "title": "Harry Potter"
     }

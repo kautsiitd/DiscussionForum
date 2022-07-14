@@ -36,8 +36,8 @@ extension HomePageVC: UITableViewDataSource {
 
 extension HomePageVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let playerPageVC = PlayerPageVC()
-        navigationController?.pushViewController(playerPageVC, animated: true)
+        let movieID = model?.movies[indexPath.row].id ?? "--"
+        CommandFactory.shared.openPlayer(for: movieID, on: self)
     }
 }
 

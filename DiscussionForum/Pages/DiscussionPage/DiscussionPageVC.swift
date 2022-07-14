@@ -8,68 +8,94 @@
 import UIKit
 
 class DiscussionPageVC: UIViewController {
-    //MARK: - Constants
-    let answertext1 = "So I’ve recently started getting deeper into lotr lore after watching the movies. I wanted to ask, they say that mithril is one of the strongest metals and whatnot, I always wondered if Fingolfin had worn mithril during his battle with Morgoth, would he have survived or maybe last longer to injure him further. I know that morgoth is a valar and holds immense power but would mithril have helped or would it have made no difference."
-    let answertext = "The Valar don't want to get involved in Middle-Earth."
-    
     //MARK: - Elements
-    @IBOutlet private var tableView: UITableView!
-    @IBOutlet private var QuestionLabel: UILabel!
-    @IBOutlet private var replySectionView: UIView!
-    @IBOutlet private var replyTextField: UITextField!
-    @IBOutlet private var sendButton: UIButton!
-
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var replySectionView: UIView!
+    @IBOutlet weak var replyTextField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var upVoteButton: UIButton!
+    @IBOutlet weak var downVoteButton: UIButton!
+    @IBOutlet weak var voteCountLabel: UILabel!
+    
     //MARK: - Properties
-    var answers:[Answer] = []
+    var model: DiscussionPageModel? = nil
+    var newUpVotes = 0 {
+        didSet { DispatchQueue.main.async {
+            self.voteCountLabel.text = String(self.newUpVotes)
+        }}
+    }
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
+        setupUI()
+        model = DiscussionPageModel(viewController: self)
+        configureActions()
     }
-}
-
-//MARK: - IBActions
-extension DiscussionPageVC {
+    
     @IBAction func sendClicked(_ sender: Any) {
-//        let text = replyTextField.text ?? "Hey, interesting question!"
+        let text = replyTextField.text ?? "Hey, interesting question!"
         replyTextField.text = nil
-//        answers.append(Answer(answertext: text))
+        let comment = Answer(id: String(Int.random(in: 20...100)), text: text, upvotes: 0, userName: "xrayUser")
+        model?.discussion?.answers.append(comment)
         tableView.reloadData()
     }
-}
-
-//MARK: - UITableView
-extension DiscussionPageVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return answers.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(AnswerTableViewCell.self)", for: indexPath) as! AnswerTableViewCell
-        cell.replyTextLabel.text = answers[indexPath.row].text
-        return cell
-    }
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-}
-
-extension DiscussionPageVC: UITableViewDelegate {
     
-}
-
-//MARK: - Helpers
-extension DiscussionPageVC {
-    private func setupTableView() {
+    func configureActions() {
+        let upAction = UIAction { action in
+            self.newUpVotes = Helper.updateCount(upvotes: Int(self.model?.discussion?.post.upvotes ?? "0") ?? 0, action: .upVote)
+        }
+        upVoteButton.sendAction(upAction)
+        
+        let downVoteAction = UIAction { action in
+            self.newUpVotes = Helper.updateCount(upvotes: Int(self.model?.discussion?.post.upvotes ?? "0") ?? 0, action: .downVote)
+        }
+        downVoteButton.sendAction(downVoteAction)
+    }
+    
+    fileprivate func setupUI() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        // Do any additional setup after loading the view.
         tableView.rowHeight = UITableView.automaticDimension
         let nibName = "\(AnswerTableViewCell.self)"
         let nib = UINib.init(nibName: nibName, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: nibName)
-        answers = []
         self.replySectionView.layer.borderWidth = 1
         self.replySectionView.layer.borderColor = UIColor(red:27/255, green:48/255, blue:68/255, alpha: 1).cgColor
         replyTextField.text = nil
         replyTextField.placeholder = "Add your reply here.."
+    }
+}
+
+extension DiscussionPageVC: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return model?.discussion?.answers.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "\(AnswerTableViewCell.self)", for: indexPath) as? AnswerTableViewCell {
+            if let answer = model?.discussion?.answers[indexPath.row] {
+                cell.answer = answer
+            }
+            return cell
+        }
+        return UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+}
+
+//MARK: - ApiRespondable
+extension DiscussionPageVC: ApiRespondable {
+    func didFetchSuccessfully(for params: [String : AnyHashable]) {
         tableView.reloadData()
+    }
+    func didFail(with error: BaseError, for params: [String : AnyHashable]) {
+        print(error.title, error.description)
     }
 }

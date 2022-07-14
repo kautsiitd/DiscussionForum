@@ -12,6 +12,7 @@ import UIKit
     @IBOutlet private var navigationView: UICollectionView!
     @IBOutlet private var tableView: UITableView!
     //MARK: - Properties
+    var parentVC: UIViewController!
     var currentNavigationIndexPath = IndexPath(item: 0, section: 0)
     let navigationTitles: [String] = ["Music", "In Scene", "Shop", "BonusContent", "Trivia", "Cast", "Scenes", "FamVam"]
     var questions: [Question] = [] {
@@ -65,7 +66,8 @@ extension XrayMainView: UITableViewDataSource {
 
 extension XrayMainView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let questionId = questions[indexPath.row].id
+        CommandFactory.shared.openPost(for: questionId, on: parentVC)
     }
 }
 

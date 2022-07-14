@@ -16,6 +16,7 @@ class PlayerPageVC: UIViewController {
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        xrayMainView.parentVC = self
         model = PlayerPageModel(viewController: self)
     }
 }
