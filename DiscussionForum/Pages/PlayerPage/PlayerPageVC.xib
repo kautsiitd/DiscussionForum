@@ -26,7 +26,7 @@
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rv-QT-mxF" customClass="XrayMainView" customModule="DiscussionForum" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="221" width="414" height="641"/>
+                    <rect key="frame" x="0.0" y="221" width="414" height="675"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="XrayMainView"/>
@@ -40,7 +40,7 @@
                 <constraint firstItem="7YN-g7-STY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VwF-S4-T2H"/>
                 <constraint firstItem="8rv-QT-mxF" firstAttribute="top" secondItem="7YN-g7-STY" secondAttribute="bottom" id="hJ7-tC-DdL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8rv-QT-mxF" secondAttribute="trailing" id="m81-gZ-Bzq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8rv-QT-mxF" secondAttribute="bottom" id="mlT-vu-rk7"/>
+                <constraint firstAttribute="bottom" secondItem="8rv-QT-mxF" secondAttribute="bottom" id="mlT-vu-rk7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7YN-g7-STY" secondAttribute="trailing" id="oaS-WC-0oU"/>
                 <constraint firstItem="8rv-QT-mxF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="owT-zB-1sG"/>
             </constraints>

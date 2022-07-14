@@ -12,7 +12,7 @@ struct Question: Codable {
     let userName: String
     let upvotes: Int
     let comments: Int
-    let category: QuestionCategory
+//    let category: QuestionCategory
 }
 
 //MARK: - Enums
