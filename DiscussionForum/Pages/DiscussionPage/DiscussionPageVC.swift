@@ -44,12 +44,12 @@ class DiscussionPageVC: UIViewController {
     
     func configureActions() {
         let upAction = UIAction { action in
-            self.newUpVotes = Helper.updateCount(upvotes: Int(self.model?.discussion?.post.upvotes ?? "0") ?? 0, action: .upVote)
+            self.newUpVotes = Helper.updateCount(upvotes: Int(self.model?.discussion?.post.upvotes ?? 0), action: .upVote)
         }
         upVoteButton.sendAction(upAction)
         
         let downVoteAction = UIAction { action in
-            self.newUpVotes = Helper.updateCount(upvotes: Int(self.model?.discussion?.post.upvotes ?? "0") ?? 0, action: .downVote)
+            self.newUpVotes = Helper.updateCount(upvotes: Int(self.model?.discussion?.post.upvotes ?? 0), action: .downVote)
         }
         downVoteButton.sendAction(downVoteAction)
     }

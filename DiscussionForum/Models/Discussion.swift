@@ -15,6 +15,7 @@ struct Discussion: Codable {
 
 // MARK: - Post
 struct Post: Codable {
-    let id, text, userName, upvotes: String
+    let id, text, userName: String
+    let upvotes: Int
     let comments, category: String
 }
