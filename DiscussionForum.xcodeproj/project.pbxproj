@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634107D328803B7B00AF321A /* Post_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6360BFEB287FE5E60034A248 /* Post_2.json */; };
 		63476DFC287FDB4E005F322C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476DFB287FDB4E005F322C /* AppDelegate.swift */; };
 		63476DFE287FDB4E005F322C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476DFD287FDB4E005F322C /* SceneDelegate.swift */; };
 		63476E03287FDB4E005F322C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63476E01287FDB4E005F322C /* Main.storyboard */; };
 		63476E05287FDB50005F322C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63476E04287FDB50005F322C /* Assets.xcassets */; };
 		63476E08287FDB50005F322C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63476E06287FDB50005F322C /* LaunchScreen.storyboard */; };
 		6360BFED287FE6170034A248 /* QuestionsList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6360BFEC287FE6170034A248 /* QuestionsList.json */; };
-		6360BFEF287FE6560034A248 /* SecondPost.json in Resources */ = {isa = PBXBuildFile; fileRef = 6360BFEE287FE6560034A248 /* SecondPost.json */; };
+		6360BFEF287FE6560034A248 /* Post_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 6360BFEE287FE6560034A248 /* Post_4.json */; };
 		6360BFF2287FE6960034A248 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFF1287FE6960034A248 /* Movie.swift */; };
 		6360BFF4287FE6EC0034A248 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFF3287FE6EC0034A248 /* Question.swift */; };
 		6360BFF6287FE7EC0034A248 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFF5287FE7EC0034A248 /* Answer.swift */; };
@@ -59,9 +60,9 @@
 		63476E04287FDB50005F322C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63476E07287FDB50005F322C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63476E09287FDB50005F322C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6360BFEB287FE5E60034A248 /* FirstPost.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FirstPost.json; sourceTree = "<group>"; };
+		6360BFEB287FE5E60034A248 /* Post_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Post_2.json; sourceTree = "<group>"; };
 		6360BFEC287FE6170034A248 /* QuestionsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionsList.json; sourceTree = "<group>"; };
-		6360BFEE287FE6560034A248 /* SecondPost.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SecondPost.json; sourceTree = "<group>"; };
+		6360BFEE287FE6560034A248 /* Post_4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Post_4.json; sourceTree = "<group>"; };
 		6360BFF1287FE6960034A248 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		6360BFF3287FE6EC0034A248 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		6360BFF5287FE7EC0034A248 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -150,9 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				6360C019287FF96E0034A248 /* Movies.json */,
-				6360BFEB287FE5E60034A248 /* FirstPost.json */,
+				6360BFEB287FE5E60034A248 /* Post_2.json */,
 				6360BFEC287FE6170034A248 /* QuestionsList.json */,
-				6360BFEE287FE6560034A248 /* SecondPost.json */,
+				6360BFEE287FE6560034A248 /* Post_4.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -348,7 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6360C01A287FF96E0034A248 /* Movies.json in Resources */,
-				6360BFEF287FE6560034A248 /* SecondPost.json in Resources */,
+				6360BFEF287FE6560034A248 /* Post_4.json in Resources */,
 				63476E08287FDB50005F322C /* LaunchScreen.storyboard in Resources */,
 				6360C00E287FF10B0034A248 /* MovieTableViewCell.xib in Resources */,
 				6360C01E287FF9C60034A248 /* PlayerPageVC.xib in Resources */,
@@ -358,6 +359,7 @@
 				6360C03D288018DE0034A248 /* DiscussionPageVC.xib in Resources */,
 				6360C02D2880056A0034A248 /* NavigationTitleCollectionViewCell.xib in Resources */,
 				63476E03287FDB4E005F322C /* Main.storyboard in Resources */,
+				634107D328803B7B00AF321A /* Post_2.json in Resources */,
 				6360C04228801A8D0034A248 /* AnswerTableViewCell.xib in Resources */,
 				6360C033288006CE0034A248 /* XrayMainView.xib in Resources */,
 				6360C0312880066F0034A248 /* QTileTableViewCell.xib in Resources */,

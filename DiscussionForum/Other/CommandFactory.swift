@@ -25,6 +25,7 @@ extension CommandFactory {
     }
     func openPost(for id: String, on vc: UIViewController) {
         let discussionPageVC = DiscussionPageVC()
+        discussionPageVC.id = id
         vc.navigationController?.pushViewController(discussionPageVC, animated: true)
     }
 }

@@ -9,9 +9,11 @@ import Foundation
 
 class BaseCoreLodableModel: CoreLoadable {
     //MARK: - Properties
+    let id: String
     let viewController: ApiRespondableVC
     
-    init(viewController: ApiRespondableVC) {
+    init(id: String? = nil, viewController: ApiRespondableVC) {
+        self.id = id ?? ""
         self.viewController = viewController
         do { try ApiManager.shared.loadLocalData(with: self) }
         catch let error { viewController.didFail(with: FileError.custom(error), for: [:]) }

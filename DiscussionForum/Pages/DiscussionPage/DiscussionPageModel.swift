@@ -12,7 +12,7 @@ class DiscussionPageModel: BaseCoreLodableModel {
     var discussion: Discussion?
     
     //MARK: - CoreLoadable
-    override var fileName: String { "FirstPost" }
+    override var fileName: String { "Post_\(id)" }
     override var fileExtension: String { "json" }
     
     override func parse(_ data: Data) throws {

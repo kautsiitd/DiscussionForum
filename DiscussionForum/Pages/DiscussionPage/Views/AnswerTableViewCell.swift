@@ -12,9 +12,6 @@ class AnswerTableViewCell: UITableViewCell {
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var replyTextLabel: UILabel!
-    @IBOutlet weak var upvoteButton: UIButton!
-    @IBOutlet weak var downVoteButton: UIButton!
-    @IBOutlet weak var reportSpoilerButton: UIButton!
     @IBOutlet weak var upvotesCountLabel: UILabel!
     
     //MARK: - Properties
@@ -35,6 +32,9 @@ extension AnswerTableViewCell {
 //MARK: - Helpers
 extension AnswerTableViewCell {
     private func refreshView() {
-        replyTextLabel.text = "So I’ve recently started getting deeper into lotr lore after watching the movies. I wanted to ask, they say that mithril is one of the strongest metals and whatnot, I always wondered if Fingolfin had worn mithril during his battle with Morgoth, would he have survived or maybe last longer to injure him further. I know that morgoth is a valar and holds immense power but would mithril have helped or would it have made no difference."
+        userImageView.image = UIImage(withName: answer?.userName)
+        userNameLabel.text = answer?.userName
+        replyTextLabel.text = answer?.text
+        upvotesCountLabel.text = "\(answer?.upvotes ?? 0)"
     }
 }
