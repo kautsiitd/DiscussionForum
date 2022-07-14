@@ -2,7 +2,7 @@
     "post" : {
         "id" : "4",
         "text" : "What if the Fellowship of the Ring had not been broken?",
-        "userName" : "Andre_BR_RJ",
+        "userName" : "Andre",
         "upvotes" : 143,
         "comments" : 6,
         "category" : "AlternativePlot"
@@ -12,31 +12,31 @@
             "id" : "4_1",
             "text" : "It had to be broken at some point. Boromir was going to Minas Tirith no matter what. The Ring needed to go to the Fire.",
             "upvotes" : 3,
-            "userName" : "RabbiValas"
+            "userName" : "Rabbi"
         },
         {
             "id" : "4_2",
             "text" : "I think it would actually have been a huge problem if the group had all stuck together.",
             "upvotes" : 1,
-            "userName" : "Andre_BR_RJ"
+            "userName" : "Andre"
         },
         {
             "id" : "4_3",
             "text" : "Since they were not all going the same direction. The way it breaks is left to Fate, and bad as it all turns out in the short run, it all works out in the long run.",
             "upvotes" : 1,
-            "userName" : "RomanGallas"
+            "userName" : "Roman"
         },
         {
             "id" : "4_4",
             "text" : "They would've gotten to the black gates, where aragorn, legolas,gimli, boromir and Gandalf would have taken out the entire army of mordor by them self (unless the eagles wanted to help) while they are fighting the hobbits runs up to mount doom and drop the ring in.",
             "upvotes" : 2,
-            "userName" : "RabbiValas"
+            "userName" : "Rabbi"
         },
         {
             "id" : "4_5",
             "text" : "Without Merry and Pippin, the Ents would not have marched on Sarauman.",
             "upvotes" : 1,
-            "userName" : "Background-Eagle702"
+            "userName" : "Eagle"
         }
         
     ]
