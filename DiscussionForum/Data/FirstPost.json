@@ -1,0 +1,56 @@
+{
+    "post" : {
+        "id" : "2",
+        "text" : "Ulmo, Lord of Waters knows what goes on in Middle Earth because water runs in all the veins of the earth. So Isildur gets ambushed and killed and loses his ring in the river, where it sat for a long time. During all that time, Ulmo knew but did nothing?",
+        "userName" : "SpirituallyMyopic",
+        "upvotes" : "422",
+        "comments" : "8",
+        "category" : "Question"
+    },
+    "comments" : [
+        {
+            "id" : "2_1",
+            "text" : "The Valar don't want to get involved in Middle-Earth.",
+            "upvotes" : "10",
+            "userName" : "RomanGallas"
+        },
+        {
+            "id" : "2_2",
+            "text" : "They could have choose to destroy it. Who would have destroyed it? A mortal? He could have succumbed under the Ring's influence. Even the Istari feared the corruption of it.",
+            "upvotes" : "4",
+            "userName" : "Andre_BR_RJ"
+        },
+        {
+            "id" : "2_3",
+            "text" : "Maybe with the help of Ulmo the ring was found by Deagol, and it led to good eventually",
+            "upvotes" : "2",
+            "userName" : "RabbiValas"
+        },
+        {
+            "id" : "2_4",
+            "text" : "Probably not Ulmo but now that I think about it, Manwe might have known. We see a lot of intervention from the eagles right after Bilbo attains the one ring.",
+            "upvotes" : "5",
+            "userName" : "RabbiValas"
+        },
+        {
+            "id" : "2_5",
+            "text" : "The Valar stopped interfering directly before the Second age began, and even then, made it more improbable by sundering Valinor from Arda as they did. Ulmo, even if he didn't leave, still abides by the words of Manwe, and only very subtly and gradually drops hints for men; you know, back when they knew to listen for him anyway.",
+            "upvotes" : "7",
+            "userName" : "SpirituallyMyopic"
+        },
+        {
+            "id" : "2_6",
+            "text" : "In the time the Ring was in the Anduin, Sauron was gone. If I remember correctly, it wasn't certain that he would come back. When Sauron was back the Ring was gone from Ulmo's domain.",
+            "upvotes" : "10",
+            "userName" : "RomanGallas"
+        },
+        {
+            "id" : "2_7",
+            "text" : "I think that even if the Valar knew where the One ring was they refused to bring it in Valinor because they feared his influence. Remember that they trusted Morgoth once and it didn't end well. Another Morgoth-like influence in Valinor? No thanks.",
+            "upvotes" : "10",
+            "userName" : "Background-Eagle702"
+        }
+    ]
+   
+}
+

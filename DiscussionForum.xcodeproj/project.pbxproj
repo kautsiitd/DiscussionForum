@@ -13,6 +13,8 @@
 		63476E03287FDB4E005F322C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63476E01287FDB4E005F322C /* Main.storyboard */; };
 		63476E05287FDB50005F322C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63476E04287FDB50005F322C /* Assets.xcassets */; };
 		63476E08287FDB50005F322C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63476E06287FDB50005F322C /* LaunchScreen.storyboard */; };
+		6360BFED287FE6170034A248 /* QuestionsList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6360BFEC287FE6170034A248 /* QuestionsList.json */; };
+		6360BFEF287FE6560034A248 /* SecondPost.json in Resources */ = {isa = PBXBuildFile; fileRef = 6360BFEE287FE6560034A248 /* SecondPost.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		63476E04287FDB50005F322C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63476E07287FDB50005F322C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63476E09287FDB50005F322C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6360BFEB287FE5E60034A248 /* FirstPost.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FirstPost.json; sourceTree = "<group>"; };
+		6360BFEC287FE6170034A248 /* QuestionsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionsList.json; sourceTree = "<group>"; };
+		6360BFEE287FE6560034A248 /* SecondPost.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SecondPost.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 		63476DFA287FDB4E005F322C /* DiscussionForum */ = {
 			isa = PBXGroup;
 			children = (
+				6360BFE9287FE4F10034A248 /* Data */,
 				63476DFB287FDB4E005F322C /* AppDelegate.swift */,
 				63476DFD287FDB4E005F322C /* SceneDelegate.swift */,
 				63476DFF287FDB4E005F322C /* ViewController.swift */,
@@ -65,6 +71,16 @@
 				63476E09287FDB50005F322C /* Info.plist */,
 			);
 			path = DiscussionForum;
+			sourceTree = "<group>";
+		};
+		6360BFE9287FE4F10034A248 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6360BFEB287FE5E60034A248 /* FirstPost.json */,
+				6360BFEC287FE6170034A248 /* QuestionsList.json */,
+				6360BFEE287FE6560034A248 /* SecondPost.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6360BFEF287FE6560034A248 /* SecondPost.json in Resources */,
 				63476E08287FDB50005F322C /* LaunchScreen.storyboard in Resources */,
+				6360BFED287FE6170034A248 /* QuestionsList.json in Resources */,
 				63476E05287FDB50005F322C /* Assets.xcassets in Resources */,
 				63476E03287FDB4E005F322C /* Main.storyboard in Resources */,
 			);
