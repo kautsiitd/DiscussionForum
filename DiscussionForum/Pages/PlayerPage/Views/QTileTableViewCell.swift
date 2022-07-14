@@ -13,7 +13,8 @@ class QTileTableViewCell: UITableViewCell {
         didSet { refreshView() }
     }
     //MARK: - Elements
-    @IBOutlet private var movieImageView: UIImageView!
+    @IBOutlet private var userImageView: UIImageView!
+    @IBOutlet private var userNameLabel: UILabel!
     @IBOutlet private var titleLabel: UILabel!
 
     //MARK: - LifeCycle
@@ -26,7 +27,8 @@ class QTileTableViewCell: UITableViewCell {
 //MARk: - Helpers
 extension QTileTableViewCell {
     private func refreshView() {
-        movieImageView.image = UIImage(withName: question?.userName)
+        userImageView.image = UIImage(withName: question?.userName)
+        userNameLabel.text = question?.userName
         titleLabel.text = question?.text
     }
 }
