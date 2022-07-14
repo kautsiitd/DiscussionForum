@@ -7,9 +7,11 @@
 
 import UIKit
 
+var i = 10
 class CreatePostVC: UIViewController {
     //MARK: - Elements
-    @IBOutlet weak var textViewLabel: UITextView!
+    @IBOutlet private var textViewLabel: UITextView!
+    var playerVC: PlayerPageVC?
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
@@ -20,6 +22,8 @@ class CreatePostVC: UIViewController {
 //MARK: - IBActions
 extension CreatePostVC {
     @IBAction func submitClicked(_ sender: Any) {
-        
+//        let question = Question(id: String(Int.random(in: i...100)), text: textViewLabel.text ?? "", userName: "xrayUser", upvotes: 0, comments: 0)
+//        i += 1
+//        playerVC?.model?.questions.append(question)
     }
 }
