@@ -18,6 +18,9 @@
 		6360BFF2287FE6960034A248 /* MovieTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFF1287FE6960034A248 /* MovieTile.swift */; };
 		6360BFF4287FE6EC0034A248 /* QuestionTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFF3287FE6EC0034A248 /* QuestionTile.swift */; };
 		6360BFF6287FE7EC0034A248 /* AnswerTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFF5287FE7EC0034A248 /* AnswerTile.swift */; };
+		6360BFF9287FE8B60034A248 /* NetworkingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFF8287FE8B60034A248 /* NetworkingProtocols.swift */; };
+		6360BFFB287FE9800034A248 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFFA287FE9800034A248 /* ApiManager.swift */; };
+		6360BFFD287FEA080034A248 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360BFFC287FEA080034A248 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		6360BFF1287FE6960034A248 /* MovieTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTile.swift; sourceTree = "<group>"; };
 		6360BFF3287FE6EC0034A248 /* QuestionTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTile.swift; sourceTree = "<group>"; };
 		6360BFF5287FE7EC0034A248 /* AnswerTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTile.swift; sourceTree = "<group>"; };
+		6360BFF8287FE8B60034A248 /* NetworkingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocols.swift; sourceTree = "<group>"; };
+		6360BFFA287FE9800034A248 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		6360BFFC287FEA080034A248 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 		63476DFA287FDB4E005F322C /* DiscussionForum */ = {
 			isa = PBXGroup;
 			children = (
+				6360BFF7287FE89A0034A248 /* Networking */,
 				6360BFF0287FE6840034A248 /* Models */,
 				6360BFE9287FE4F10034A248 /* Data */,
 				63476DFB287FDB4E005F322C /* AppDelegate.swift */,
@@ -98,6 +105,16 @@
 				6360BFF5287FE7EC0034A248 /* AnswerTile.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6360BFF7287FE89A0034A248 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6360BFF8287FE8B60034A248 /* NetworkingProtocols.swift */,
+				6360BFFA287FE9800034A248 /* ApiManager.swift */,
+				6360BFFC287FEA080034A248 /* Errors.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,11 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6360BFFB287FE9800034A248 /* ApiManager.swift in Sources */,
 				63476E00287FDB4E005F322C /* ViewController.swift in Sources */,
+				6360BFF9287FE8B60034A248 /* NetworkingProtocols.swift in Sources */,
 				6360BFF4287FE6EC0034A248 /* QuestionTile.swift in Sources */,
 				63476DFC287FDB4E005F322C /* AppDelegate.swift in Sources */,
 				6360BFF6287FE7EC0034A248 /* AnswerTile.swift in Sources */,
 				63476DFE287FDB4E005F322C /* SceneDelegate.swift in Sources */,
+				6360BFFD287FEA080034A248 /* Errors.swift in Sources */,
 				6360BFF2287FE6960034A248 /* MovieTile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
