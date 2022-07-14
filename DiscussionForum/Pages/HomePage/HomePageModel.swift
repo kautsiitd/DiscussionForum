@@ -14,7 +14,7 @@ class HomePageModel: BaseCoreLodableModel {
     
     //MARK: - CoreLoadable
     override var fileName: String { "Movies" }
-    override var fileExtension: String { "txt" }
+    override var fileExtension: String { "json" }
     
     override func parse(_ data: Data) throws {
         let decoder = JSONDecoder()
