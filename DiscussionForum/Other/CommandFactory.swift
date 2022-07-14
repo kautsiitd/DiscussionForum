@@ -15,6 +15,10 @@ class CommandFactory {
 
 //MARK: - Available Functions
 extension CommandFactory {
+    func openCreatePost(for movieID: String, on vc: UIViewController) {
+        let createPostVC = CreatePostVC()
+        vc.navigationController?.present(createPostVC, animated: true)
+    }
     func openPlayer(for id: String, on vc: UIViewController) {
         let playerPageVC = PlayerPageVC()
         vc.navigationController?.pushViewController(playerPageVC, animated: true)

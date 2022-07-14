@@ -32,11 +32,34 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="XrayMainView"/>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szd-c1-cCQ">
+                    <rect key="frame" x="322" y="798" width="64" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="Vit-MV-6SX"/>
+                        <constraint firstAttribute="width" secondItem="Szd-c1-cCQ" secondAttribute="height" multiplier="1:1" id="WnK-Vy-wib"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="linkColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="55" scale="default"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createPost" destination="-1" eventType="touchUpInside" id="bfk-aU-FDh"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Szd-c1-cCQ" secondAttribute="trailing" constant="28" id="Dd3-Al-OKA"/>
                 <constraint firstItem="7YN-g7-STY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DzS-gC-k8Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Szd-c1-cCQ" secondAttribute="bottom" id="KzR-Je-ZgC"/>
                 <constraint firstItem="7YN-g7-STY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VwF-S4-T2H"/>
                 <constraint firstItem="8rv-QT-mxF" firstAttribute="top" secondItem="7YN-g7-STY" secondAttribute="bottom" id="hJ7-tC-DdL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8rv-QT-mxF" secondAttribute="trailing" id="m81-gZ-Bzq"/>
@@ -49,6 +72,10 @@
     </objects>
     <resources>
         <image name="PlayerPlaceholder" width="2688" height="1242"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

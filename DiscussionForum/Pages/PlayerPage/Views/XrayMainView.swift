@@ -14,7 +14,7 @@ import UIKit
     //MARK: - Properties
     var parentVC: UIViewController!
     var currentNavigationIndexPath = IndexPath(item: 0, section: 0)
-    let navigationTitles: [String] = ["Music", "In Scene", "Shop", "BonusContent", "Trivia", "Cast", "Scenes", "FamVam"]
+    let navigationTitles: [String] = ["Forum", "In Scene", "Shop", "BonusContent", "Trivia", "Cast", "Scenes", "Music"]
     var questions: [Question] = [] {
         didSet { tableView.reloadData() }
     }

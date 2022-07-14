@@ -21,6 +21,13 @@ class PlayerPageVC: UIViewController {
     }
 }
 
+//MARK: - IBActions
+extension PlayerPageVC {
+    @IBAction private func createPost() {
+        CommandFactory.shared.openCreatePost(for: "1", on: self)
+    }
+}
+
 //MARK: - ApiRespondable
 extension PlayerPageVC: ApiRespondable {
     func didFetchSuccessfully(for params: [String : AnyHashable]) {
