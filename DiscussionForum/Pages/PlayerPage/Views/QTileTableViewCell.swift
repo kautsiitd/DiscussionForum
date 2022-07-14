@@ -47,7 +47,7 @@ extension QTileTableViewCell {
         tagLabel.text = question?.category.text
         if let question = question {
             upvoteButton.setTitle("\(question.upvotes)", for: .normal)
-            followButton.setTitle("\(question.upvotes)", for: .normal)
+            followButton.setTitle("\(question.comments)", for: .normal)
         } else {
             upvoteButton.setTitle("--", for: .normal)
             followButton.setTitle("--", for: .normal)

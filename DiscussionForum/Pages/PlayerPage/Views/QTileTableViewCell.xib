@@ -50,7 +50,7 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfS-4f-Q0h">
-                        <rect key="frame" x="175.5" y="103.5" width="36" height="17"/>
+                        <rect key="frame" x="179.5" y="103.5" width="36" height="17"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="dot.radiowaves.up.forward" catalog="system" title="70" imagePadding="4">
@@ -65,7 +65,7 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzI-Sn-eXE">
-                        <rect key="frame" x="223.5" y="102" width="20.5" height="20.5"/>
+                        <rect key="frame" x="231.5" y="102" width="20.5" height="20.5"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="flag" catalog="system">
@@ -104,13 +104,13 @@
                 </subviews>
                 <color key="backgroundColor" systemColor="labelColor"/>
                 <constraints>
-                    <constraint firstItem="hfS-4f-Q0h" firstAttribute="leading" secondItem="p0a-v5-A3S" secondAttribute="trailing" constant="12" id="950-nc-AHU"/>
+                    <constraint firstItem="hfS-4f-Q0h" firstAttribute="leading" secondItem="p0a-v5-A3S" secondAttribute="trailing" constant="16" id="950-nc-AHU"/>
                     <constraint firstItem="p0a-v5-A3S" firstAttribute="centerY" secondItem="28B-Gd-wTT" secondAttribute="centerY" id="CBW-JT-oHQ"/>
                     <constraint firstItem="28B-Gd-wTT" firstAttribute="centerX" secondItem="3YK-CL-uAa" secondAttribute="centerX" id="Nt4-pZ-0iB"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aYa-5S-hrz" secondAttribute="bottom" constant="8" id="O0I-t8-RrS"/>
                     <constraint firstItem="aYa-5S-hrz" firstAttribute="leading" secondItem="3YK-CL-uAa" secondAttribute="trailing" constant="16" id="Ow8-Rg-9ga"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aYa-5S-hrz" secondAttribute="trailing" constant="28" id="SX3-Zo-HDQ"/>
-                    <constraint firstItem="kzI-Sn-eXE" firstAttribute="leading" secondItem="hfS-4f-Q0h" secondAttribute="trailing" constant="12" id="U4r-Bw-Ot8"/>
+                    <constraint firstItem="kzI-Sn-eXE" firstAttribute="leading" secondItem="hfS-4f-Q0h" secondAttribute="trailing" constant="16" id="U4r-Bw-Ot8"/>
                     <constraint firstItem="3YK-CL-uAa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="cZd-jm-Fct"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="28B-Gd-wTT" secondAttribute="bottom" constant="8" id="ci4-Ws-jvG"/>
                     <constraint firstItem="aYa-5S-hrz" firstAttribute="top" secondItem="3YK-CL-uAa" secondAttribute="top" id="dN1-dY-hUE"/>
