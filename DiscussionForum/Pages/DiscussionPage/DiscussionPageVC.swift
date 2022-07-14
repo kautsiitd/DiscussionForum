@@ -69,9 +69,14 @@ extension DiscussionPageVC {
     @IBAction func sendClicked(_ sender: Any) {
         let text = replyTextField.text ?? "Hey, interesting question!"
         replyTextField.text = nil
-        let comment = Answer(id: String(Int.random(in: 20...100)), text: text, upvotes: 0, userName: "xrayUser")
-        model?.discussion?.answers.append(comment)
+        let answer = Answer(id: String(Int.random(in: 20...100000)), text: text, upvotes: 0, userName: "Rabbi")
+        model?.discussion?.answers.append(answer)
         tableView.reloadData()
+        let answersCount = model?.discussion?.answers.count ?? 0
+        if answersCount > 0 {
+            let lastIndexPath = IndexPath(row: answersCount-1, section: 0)
+            tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
+        }
     }
 }
 

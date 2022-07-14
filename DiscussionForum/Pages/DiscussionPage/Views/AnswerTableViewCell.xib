@@ -54,7 +54,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYu-l2-10d">
-                                <rect key="frame" x="321.66666666666669" y="120" width="48.333333333333314" height="20"/>
+                                <rect key="frame" x="325.66666666666669" y="120" width="44.333333333333314" height="20"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="O9s-NB-Yn5"/>
@@ -101,6 +101,7 @@
                             <constraint firstItem="SZH-9x-DrO" firstAttribute="leading" secondItem="NN0-c9-6At" secondAttribute="trailing" constant="8" id="SeW-l5-IvL"/>
                             <constraint firstItem="9aA-YS-Jul" firstAttribute="centerX" secondItem="NN0-c9-6At" secondAttribute="centerX" id="Vc4-2U-zgB"/>
                             <constraint firstItem="SZH-9x-DrO" firstAttribute="top" secondItem="UQI-Ae-fFI" secondAttribute="top" constant="8" id="bgv-b6-1zA"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9aA-YS-Jul" secondAttribute="bottom" constant="16" id="dqG-6q-UTe"/>
                             <constraint firstItem="SZH-9x-DrO" firstAttribute="leading" secondItem="9aA-YS-Jul" secondAttribute="trailing" constant="2" id="hYF-RF-hfe"/>
                             <constraint firstItem="WyS-3o-xbe" firstAttribute="top" secondItem="BYu-l2-10d" secondAttribute="bottom" constant="6" id="hsS-GE-tXx"/>
                             <constraint firstItem="WyS-3o-xbe" firstAttribute="leading" secondItem="UQI-Ae-fFI" secondAttribute="leading" constant="49" id="p3C-uv-gLQ"/>
