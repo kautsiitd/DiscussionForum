@@ -106,6 +106,7 @@ extension DiscussionPageVC: UITableViewDataSource, UITableViewDelegate {
 extension DiscussionPageVC: ApiRespondable {
     func didFetchSuccessfully(for params: [String : AnyHashable]) {
         questionLabel.text = model?.discussion?.post.text
+        voteCountLabel.text = "\(model?.discussion?.post.upvotes ?? 0)"
         tableView.reloadData()
     }
     func didFail(with error: BaseError, for params: [String : AnyHashable]) {
