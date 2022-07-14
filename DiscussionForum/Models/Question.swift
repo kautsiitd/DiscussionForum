@@ -1,12 +1,12 @@
 //
-//  QuestionTile.swift
+//  Question.swift
 //  DiscussionForum
 //
 //  Created by Kautsya Kanu on 14/07/22.
 //
 
 import Foundation
-struct QuestionTile: Codable {
+struct Question: Codable {
     let id: String
     let text: String
     let userName: String
@@ -16,7 +16,7 @@ struct QuestionTile: Codable {
 }
 
 //MARK: - Enums
-extension QuestionTile {
+extension Question {
     enum QuestionCategory: String, Codable {
         case lore, question, alternativePlot, general
     }
