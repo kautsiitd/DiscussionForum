@@ -1,10 +1,10 @@
 [
     {
-        "imageName": "hacker"
+        "imageName": "hacker",
         "title": "Lord of The Rings"
     },
     {
-        "imageName": "man"
+        "imageName": "man",
         "title": "Harry Potter"
     }
 ]

@@ -10,7 +10,7 @@ import UIKit
 
 class HomePageModel: BaseCoreLodableModel {
     //MARK: - Properties
-    var moviesList: [Movie] = []
+    var movies: [Movie] = []
     
     //MARK: - CoreLoadable
     override var fileName: String { "Movies" }
@@ -18,6 +18,6 @@ class HomePageModel: BaseCoreLodableModel {
     
     override func parse(_ data: Data) throws {
         let decoder = JSONDecoder()
-        moviesList = try decoder.decode([Movie].self, from: data)
+        movies = try decoder.decode([Movie].self, from: data)
     }
 }

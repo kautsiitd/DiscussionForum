@@ -27,6 +27,7 @@
 		6360C00D287FF10B0034A248 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360C00B287FF10B0034A248 /* MovieTableViewCell.swift */; };
 		6360C00E287FF10B0034A248 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6360C00C287FF10B0034A248 /* MovieTableViewCell.xib */; };
 		6360C013287FF2AE0034A248 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360C012287FF2AE0034A248 /* UIImage.swift */; };
+		6360C015287FF6F90034A248 /* Movies.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6360C014287FF54E0034A248 /* Movies.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -248,6 +249,7 @@
 				6360C00E287FF10B0034A248 /* MovieTableViewCell.xib in Resources */,
 				6360BFED287FE6170034A248 /* QuestionsList.json in Resources */,
 				63476E05287FDB50005F322C /* Assets.xcassets in Resources */,
+				6360C015287FF6F90034A248 /* Movies.txt in Resources */,
 				63476E03287FDB4E005F322C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

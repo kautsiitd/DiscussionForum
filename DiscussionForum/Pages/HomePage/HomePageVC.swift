@@ -11,13 +11,12 @@ class HomePageVC: UIViewController {
     //MARK: Elements
     @IBOutlet private var tableView: UITableView!
     //MARK: Properties
-    var movies: [Movie] = []
+    var model: HomePageModel? = nil
     
     //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        let model = HomePageModel(viewController: self)
-        movies = model.moviesList
+        model = HomePageModel(viewController: self)
         setupView()
     }
 }
@@ -25,12 +24,12 @@ class HomePageVC: UIViewController {
 //MARK: - UITableView
 extension HomePageVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        movies.count
+        return model!.movies.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellID = "\(MovieTableViewCell.self)"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! MovieTableViewCell
-        cell.movie = movies[indexPath.row]
+        cell.movie = model!.movies[indexPath.row]
         return cell
     }
 }
