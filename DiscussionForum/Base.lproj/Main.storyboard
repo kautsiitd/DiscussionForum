@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yu8-ER-Y8k">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Prime Video-->
+        <scene sceneID="b4p-vS-KOx">
+            <objects>
+                <navigationController title="Prime Video" navigationBarHidden="YES" id="yu8-ER-Y8k" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pIo-0R-bAe">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Mww-4N-0o7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryM-hn-7UB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3030" y="180"/>
+        </scene>
         <!--Home PageVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -43,13 +59,14 @@
                             <constraint firstItem="3ch-Dk-H1h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yaA-43-aId"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jen-F1-BkI"/>
                     <connections>
                         <outlet property="tableView" destination="oa8-u2-Oqf" id="cCC-Vc-Md3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="94"/>
+            <point key="canvasLocation" x="-2030" y="179"/>
         </scene>
     </scenes>
     <resources>

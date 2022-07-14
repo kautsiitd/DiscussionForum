@@ -9,14 +9,14 @@ import Foundation
 
 class PlayerPageModel: BaseCoreLodableModel {
     //MARK: - Properties
-    var movies: [Movie] = []
+    var questions: [Question] = []
     
     //MARK: - CoreLoadable
-    override var fileName: String { "Movies" }
+    override var fileName: String { "QuestionsList" }
     override var fileExtension: String { "json" }
     
     override func parse(_ data: Data) throws {
         let decoder = JSONDecoder()
-        movies = try decoder.decode([Movie].self, from: data)
+        questions = try decoder.decode([Question].self, from: data)
     }
 }

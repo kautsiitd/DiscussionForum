@@ -9,13 +9,23 @@ import UIKit
 
 class PlayerPageVC: UIViewController {
     //MARK: - Elements
-    @IBOutlet private var xrayMainView: UIView!
+    @IBOutlet private var xrayMainView: XrayMainView!
     //MARK: - Properties
     var model: PlayerPageModel? = nil
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        model = PlayerPageModel(viewController: self)
+        model = PlayerPageModel(viewController: self)
+    }
+}
+
+//MARK: - ApiRespondable
+extension PlayerPageVC: ApiRespondable {
+    func didFetchSuccessfully(for params: [String : AnyHashable]) {
+        xrayMainView.questions = model?.questions ?? []
+    }
+    func didFail(with error: BaseError, for params: [String : AnyHashable]) {
+        print(error.title, error.description)
     }
 }

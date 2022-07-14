@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="NavigationTitleCollectionViewCell" customModule="DiscussionForum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="79"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="79"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39N-kB-F7O">
+                        <rect key="frame" x="92" y="53.5" width="35.5" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVs-9G-tng">
+                        <rect key="frame" x="0.0" y="77" width="219" height="2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="ki8-6d-bxc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="UVs-9G-tng" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" id="5c4-ef-8Yu"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="UVs-9G-tng" secondAttribute="leading" id="BW4-nD-SoH"/>
+                <constraint firstItem="UVs-9G-tng" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="EZx-XY-MfQ"/>
+                <constraint firstItem="39N-kB-F7O" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="W2c-R7-HnD"/>
+                <constraint firstItem="39N-kB-F7O" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="pOk-yo-R5c"/>
+            </constraints>
+            <size key="customSize" width="219" height="79"/>
+            <connections>
+                <outlet property="highlighterView" destination="UVs-9G-tng" id="842-B3-fgx"/>
+                <outlet property="titleLabel" destination="39N-kB-F7O" id="jzn-eI-utG"/>
+            </connections>
+            <point key="canvasLocation" x="258.69565217391306" y="156.36160714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
